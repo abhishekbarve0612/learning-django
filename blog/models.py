@@ -2,12 +2,12 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 from django.conf import settings
+from taggit.managers import TaggableManager
 
 class PublishedManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(status=Post.Status.PUBLISHED)
 
-# Create your models here.
 class Post(models.Model):
     class Status(models.TextChoices):
         DRAFT = 'DF', 'Draft'
@@ -32,6 +32,7 @@ class Post(models.Model):
         choices=Status,
         default=Status.DRAFT
     )
+    tags = TaggableManager()
     
     objects = models.Manager()
     published = PublishedManager()
