@@ -151,3 +151,6 @@ DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 LOGIN_REDIRECT_URL = 'account:dashboard'
 LOGIN_URL = 'account:login'
 LOGOUT_URL = 'account:logout'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
