@@ -146,3 +146,8 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = config('EMAIL_PORT')
 EMAIL_USE_TLS = False
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+LOGIN_REDIRECT_URL = 'account:dashboard'
+LOGIN_URL = 'account:login'
+LOGOUT_URL = 'account:logout'
