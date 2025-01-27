@@ -15,6 +15,10 @@ django-taggit = "5.0.1"
 markdown = "3.6"
 psycopg = "3.1.18"
 pillow = "^11.1.0"
+social-auth-app-django = "5.4.0"
+django-extensions = "3.2.3"
+werkzeug = "3.0.2"
+pyopenssl = "24.1.0"
 
 
 [build-system]
