@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django_extensions',
     
     'blog.apps.BlogConfig',
+    'images.apps.ImagesConfig',
 ]
 
 MIDDLEWARE = [
